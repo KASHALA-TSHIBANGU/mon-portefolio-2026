@@ -26,111 +26,89 @@
             </ul>
         </nav>
     </header>
-   <main> 
-    <section>
+   <main >
+        <section class="projets-container">
             <h1>Mes Réalisations</h1>
-        <div>
-            <img src="image1.jpeg" alt="">
-        <div>
-            <a href="site E.commerce.html">E.commerce</a>           
-                    <p>une boutique en ligne complète développée avec HTML,CSS et javascript pur. </p>
-                        <div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>HTML</th> <th>CSS</th> <th>JS</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>  
-                     <a href=""><i class="fa-brands fa-github"></i> <a href="code">code</a>
-                     <i class="fa-solid fa-share-from-square"></i> <a href="Démo">Démo</a>
-    </section>
-    <section>
-        <div>
-           <img src="image/image2.JPEG.html" alt="">
-        </div>
-             <a href="Gestionnaire de Taches">Gestionnaire de Taches</a>
-                    <P> Application web pour organiser ses projets quotidiens avec stockage local.</P>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Python</th> <th>Flask</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>                
-                     <a href=""><i class="fa-brands fa-github"></i></a> <a href="code">code</a>
-                     <a href=""><i class="fa-solid fa-share-from-square"></i></a> <a href="Démo">Démo</a>
-    </section>
-    <section>
-        <div>
-            <img src="image3.jfif" alt="image300px">
-        </div>
-             <a href="Blog Personnel">Blog Personnel</a>  
-                    <p> Projet en cours de migration vers Lavarel pour apprendre le backend.</p>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>PHP</th> <th>Lavarel</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                <a href=""><i class="fa-brands fa-github"></i></a> <a href="code">code</a>
-                <a href=""><i class="fa-solid fa-alarm-clock"></i></a> <a href="bientot">bientot</a>
-    <section>
-    <section>
-        <div>
-            <img src="image 4.jpg" alt="image300px">
-        </div>
-             <a href="Dashboard d'Analyse">Dashboard d'Analyse</a>
-                     <p> visualisation de données dynamiques avec Python et la bibliothèque matphlotlib.</p>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Python</th> <th>Data</th>
-                                         </tr>
-                                     </thead>
-                                </table>
-                            </div>
-               <a href=""><i class="fa-brands fa-github"></i></a> <a href="code">code</a>
-               <a href=""><i class="fa-solid fa-share-from-square"></i></a> <a href="Démo">Démo</a>
-    </section>
-    <section>
-        <div>
-            <img src="image5.jpeg" alt="">
-        </div>
-            <a href="Application Météo">Application Météo </a>
-                    <p> Une application utilisant une API en temps réel pour afficher la météo mondiale</p>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>javascript</th> <th>API</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-    
-                <a href=""><i class="fa-brands fa-github"></i></a> <a href="code">code</a>
-                <a href=""><i class="fa-solid fa-share-from-square"></i></a> <a href="Démo">Démo</a>
-    </section>
-    <section>
-        <div>
-            <img src="images6.jpeg" alt="">
-        </div>
-            <a href="Maquette Mobile UI">Maquette Mobile UI</a>
-                <p>Coception d'une interface utilisateur moderne pour une application de fitness. </p>
-    
-                <a href=""><i class="fa-brands fa-figma"></i></a> <a href="Design">Design</a>
-                <a href=""><i class="fa-solid fa-eye"></i></a> <a href="Aperçu">Design</a>
-    </section>
+            
+            <div class="projet-card">
+                <img src="image/site.jpeg" alt="E-commerce" width="300">
+                <h3>E-commerce</h3>
+                <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                <div class="tags">
+                    <span>PHP</span> <span>Laravel</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i> code</a>
+                    <a href=""><i class="fa-solid fa-share-from-square"></i> Démo</a> 
+                </div>
+            </div>
 
-   </main>
+            <div class="projet-card">
+                <img src="image/gestionnaire des taches.jfif" alt="Gestionnaire de tâches" width="300">
+                <h3>Gestionnaire de tâches</h3>
+                <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                <div class="tags">
+                    <span>Python</span> <span>Flask</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i> code</a>
+                    <a href=""><i class="fa-solid fa-share-from-square"></i> Démo</a>  
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <img src="image/blog.jpeg" alt="Blog personnel" width="300">
+                <h3>Blog personnel</h3>
+                <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+                <div class="tags">
+                    <span>PHP</span> <span>Laravel</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i> code</a>
+                    <a href=""><i class="fa-solid fa-clock"></i> bientôt</a>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <img src="image/dashboard d'analyse.jpeg" alt="Dashboard" width="300">
+                <h3>Dashboard d'analyse</h3>
+                <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
+                <div class="tags">
+                    <span>Python</span> <span>Data</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i> code</a>
+                    <a href=""><i class="fa-solid fa-share-from-square"></i> Démo</a>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <img src="image/applicatibn méteo.jpeg" alt="Application météo" width="300">
+                <h3>Application météo</h3>
+                <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                <div class="tags">
+                    <span>JavaScript</span> <span>API</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i> code</a>
+                    <a href=""><i class="fa-solid fa-share-from-square"></i> Démo</a>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <img src="image/maquette mobile.jpeg" alt="Maquette fitness" width="300">
+                <h3>Maquette mobile UI</h3>
+                <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+                <div class="tags">
+                    <span>Design</span> <span>Figma</span>
+                </div>
+                <div class="links">
+                    <a href=""><i class="fa-brands fa-figma"></i> Design</a>
+                    <a href=""><i class="fa-solid fa-eye"></i> Aperçu</a>
+                </div>
+            </div>
+        </section> 
+    </main>
     <footer>
         <p>&copy; 2026 paulette. tous droits réservés</p>
         <div>
