@@ -35,7 +35,7 @@ header div a {
     text-decoration: none;
     font: size 2.2rem;
     font-weight: bold;
-    color: var(--violet-doux);
+    color: white;
 }
 
 ul li {
@@ -58,7 +58,7 @@ ul li a {
 }
 
 ul li a:hover{
-    color: var(--violet-doux);
+    color: white;
 }
 
 ul li a::after {
@@ -95,7 +95,7 @@ a.active::after{
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid var(--violet-doux);
+    border: 6px solid white;
 
 }
 
@@ -291,7 +291,7 @@ footer a:hover {
 /* --- Style Formulaire --- */
 
 .contact-form {
-    background-color: white;
+    background-color:var(--violet-doux);
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
@@ -360,11 +360,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
-    color: #333;
+    color: var(--violet-doux);
 }
 
 header {
-    background: #2c3e50;
+    background: var(--violet-doux);
     color: #fff;
     padding: 1rem 5%;
     display: flex;
@@ -400,7 +400,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #3498db;
+    color: white;
 }
 
 main {
@@ -420,7 +420,7 @@ main {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: var(--violet-doux);
 }
 
 .projet-card {
@@ -445,7 +445,7 @@ main {
 
 .projet-card h3 {
     padding: 1rem 1rem 0.5rem;
-    color: #2c3e50;
+    color: var(--violet-doux);
 }
 
 .projet-card p {
@@ -460,7 +460,7 @@ main {
 
 .tags span {
     background: #e1e8ed;
-    color: #2c3e50;
+    color: var(--violet-doux);
     padding: 4px 10px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -476,17 +476,17 @@ main {
 
 .links a {
     text-decoration: none;
-    color: #3498db;
+    color: var(white);
     font-weight: bold;
     font-size: 0.9rem;
 }
 
 .links a:hover {
-    color: #2c3e50;
+    color: var(--violet-doux);
 }
 
 footer {
-    background: #2c3e50;
+    background: var(white);
     color: #fff;
     text-align: center;
     padding: 2rem 5%;
@@ -505,7 +505,7 @@ footer div a {
 }
 
 footer div a:hover {
-    color: #3498db;
+    color: var(white);
 }
 
 @media (max-width: 768px) {
@@ -521,4 +521,217 @@ footer div a:hover {
     nav ul li {
         margin: 0 10px;
     }
+}
+
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+header a { color: white; text-decoration: none; }
+header a.active { border-bottom: 2px solid #fff; }
+
+/* LE GRAND RECTANGLE */
+.grand-rectangle-passions {
+    background-color: #ffffff;
+    border: 2px solid #333;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.grand-rectangle-passions h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.grand-rectangle-passions > p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* CONTENEUR POUR METTRE LES IMAGES CÔTE À CÔTE */
+.conteneur-rectangles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* LES RECTANGLES MOYENS ARRONDIS */
+.rectangle-moyen {
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Arrondi moyen */
+    padding: 20px;
+    width: 320px; /* Adapté pour l'image de 300px + padding */
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* TAILLE DES IMAGES À 300PX */
+.rectangle-moyen img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.rectangle-moyen h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rectangle-moyen p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/* Reset et base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LE GRAND RECTANGLE */
+.grand-rectangle {
+    background-color: #ffffff;
+    border: 3px solid #333; /* Bordure marquée */
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.grand-rectangle > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* LES RECTANGLES MOYENS ARRONDIS */
+.rectangle-moyen {
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Coins bien arrondis */
+    background-color: #fafafa;
+    padding: 25px;
+    margin-bottom: 30px;
+    
+    /* ALIGNEMENT CÔTE À CÔTE */
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.rectangle-moyen:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* TAILLE DES IMAGES FIXÉE À 300PX */
+.rectangle-moyen img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Garde les proportions sans déformer */
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+/* Zone de texte à côté de l'image */
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info p {
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+/* Header & Footer */
+header {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+header a { color: white; text-decoration: none; }
+header a.active { font-weight: bold; color: #ff9800; }
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
 }
